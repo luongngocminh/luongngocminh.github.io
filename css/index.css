@@ -14,7 +14,7 @@
 }
 
 .coat {
-	color: #FF9292;
+	color: #65655E;
 }
 
 html,
@@ -44,7 +44,7 @@ h2 {
 
 .navbar {
 	overflow: hidden;
-	background-color: #FF9292;
+	background-color: #65655E;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -61,12 +61,12 @@ h2 {
 }
 
 .navbar a:hover {
-	background-color: #ffb5b5;
+	background-color: #73736C;
 	cursor: pointer;
 }
 
 .active {
-	background-color: #ffb5b5;
+	background-color: #73736C;
 }
 
 /*-------Landing Section------------------*/
@@ -101,9 +101,11 @@ h2 {
 	display: flex;
 	justify-content: center;
 	padding: 30px;
-	border-width: 1px;
-	border-color: #E7E7E7;
-	border-style: solid
+	/* border-width: 1px; */
+	/* border-color: #E7E7E7; */
+	background-color: rgba(255, 255, 255, 0.6);
+	/* border-style: solid; */
+	opacity: ;
 }
 
 /*---------------------------------*/
@@ -162,7 +164,7 @@ h2 {
 	border-radius: 100%;
 	border: solid;
 	border-width: 0;
-	background: #FF9292;
+	background: #65655E;
 	align-items: center;
 	align-self: center;
 }
@@ -182,4 +184,12 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.landing-container {
+	background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/9KCEQR2VOV.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
