@@ -1,0 +1,185 @@
+@font-face {
+	font-family: "Caviar Dreams";
+	src: url("fonts/CaviarDreams.ttf");
+}
+
+@font-face {
+	font-family: "Caviar Dreams Bold";
+	src: url("fonts/Caviar_Dreams_Bold.ttf");
+	font-weight: bold;
+}
+
+* {
+	font-family: Caviar Dreams;
+}
+
+.coat {
+	color: #FF9292;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+
+section {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+h1,
+h2 {
+	color: #262626;
+	letter-spacing: 5.72px;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	height: 100vh;
+}
+
+
+.navbar {
+	overflow: hidden;
+	background-color: #FF9292;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbar a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	background-color: #ffb5b5;
+	cursor: pointer;
+}
+
+.active {
+	background-color: #ffb5b5;
+}
+
+/*-------Landing Section------------------*/
+.landing-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-portion {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+.left-portion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 20%;
+}
+
+.right-portion {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 20%;
+}
+
+.main-block {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+	border-width: 1px;
+	border-color: #E7E7E7;
+	border-style: solid
+}
+
+/*---------------------------------*/
+.divider {
+	width: 1px;
+	background: #d8d8d8;
+	height: 60%;
+	align-self: center;
+
+}
+
+.padding-part {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 20%;
+}
+
+.about-padding {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+/*---------About Me Section-------------*/
+.about-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.main-part {
+
+	flex-grow: 8;
+	display: flex;
+}
+
+.nav-part {
+	flex: 1;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.avatar-portion {
+
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+}
+
+.img-container {
+
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	border: solid;
+	border-width: 0;
+	background: #FF9292;
+	align-items: center;
+	align-self: center;
+}
+
+.about-me {
+	flex: 3;
+	padding: 4vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.detail {
+	height: 100%;
+	width: 100%;
+	word-wrap: break-word;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
