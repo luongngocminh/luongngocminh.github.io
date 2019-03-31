@@ -9,15 +9,40 @@ $(function () {
         topOffset: 0 // offste (in px) for fixed top navigation
     });
 })
+$(document).ready(()=> {
 
-$("section").each(()=>{
-    var active_nav = $(this).attr(id);
-    if ($(this).visible()) {
-        $('#nav-' + active_nav).addClass('active');
-    } else {
-        $('#nav-' + active_nav).removeClass('active');
-    }
+
+
+    $(window).scroll(() => {
+        if ($(document).scrollTop() > 100) {
+            $('.navbar').removeClass('top');
+            $('.active').removeClass('top');
+        } else {
+            $('.navbar').addClass('top');
+            $('.active').addClass('top');
+        }
+    })
 })
+
+// $("section").each(()=>{
+//     var active_nav = $(this).attr(id);
+//     if ($(this).visible()) {
+//         $('#nav-' + active_nav).addClass('active');
+//     } else {
+//         $('#nav-' + active_nav).removeClass('active');
+//     }
+// })
+
+
+// if ($('#main').visible(true)) {
+//     $('.navbar').animate({
+//         opacity: 0
+//     }, 1000);
+// } else {
+//     $('.navbar').animate({
+//         opacity: 1
+//     }, 1000)
+// }
 
 // $("#nav-*").each(()=>{
 //     $(this).click(()=>{

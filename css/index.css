@@ -25,14 +25,14 @@ body {
 
 
 section {
-	padding-left: 0.94vw;
-	padding-right: 0.94vw;
+	padding-left: 12px;
+	padding-right: 12px;
 }
 
 h1,
 h2 {
 	color: #262626;
-	letter-spacing: 0.45vw;
+	letter-spacing: 5.72px;
 	padding: 0;
 	margin: 0;
 }
@@ -50,14 +50,17 @@ h2 {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
+	transition-duration: .3s;
+	z-index: 5;
 }
 
 .navbar a {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 1.09vw 1.25vw;
+	padding: 14px 16px;
 	text-decoration: none;
+	transition-duration: .3s;
 }
 
 .navbar a:hover {
@@ -67,7 +70,25 @@ h2 {
 
 .active {
 	background-color: #73736C;
+	color: white;
 }
+
+.navbar.top {
+	background-color: transparent;
+}
+
+.navbar.top a {
+	color: black;
+}
+
+.navbar.top a:hover {
+	background-color: #cecece;
+}
+
+.active.top {
+	background-color: #cecece;
+}
+
 
 /*-------Landing Section------------------*/
 .landing-container {
@@ -105,7 +126,7 @@ h2 {
 	/* border-color: #E7E7E7; */
 	background-color: rgba(255, 255, 255, 0.6);
 	/* border-style: solid; */
-	opacity: ;
+	opacity: 0.6;
 }
 
 /*---------------------------------*/
@@ -159,8 +180,8 @@ h2 {
 
 .img-container {
 
-	height: 15.625vw;
-	width: 15.625vw;
+	height: 200px;
+	width: 200px;
 	border-radius: 100%;
 	border: solid;
 	border-width: 0;
@@ -187,7 +208,15 @@ h2 {
 }
 
 .landing-container {
-	background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/9KCEQR2VOV.jpg");
+	background-image: url("../img/StockSnap_9KCEQR2VOV.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.skill-container {
+	background-image: url("../img/StockSnap_ZKN6UKFKEO.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
