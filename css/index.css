@@ -70,6 +70,18 @@ h2 {
 	cursor: pointer;
 }
 
+#nav-contact {
+	background-color: #B76642;
+}
+
+#nav-contact.active {
+	background-color: #B33800;
+}
+
+#nav-contact:hover {
+	background-color: #B33800;
+}
+
 .active {
 	background-color: #73736C;
 	color: white;
@@ -81,6 +93,10 @@ h2 {
 
 .navbar.top a {
 	color: black;
+}
+
+.navbar.top #nav-contact {
+	color: white;
 }
 
 .navbar.top a:hover {
