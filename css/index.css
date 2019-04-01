@@ -53,7 +53,7 @@ h2 {
 	display: flex;
 	justify-content: flex-end;
 	transition-duration: .3s;
-	z-index: 5;
+	z-index: 10;
 }
 
 .navbar a {
@@ -357,4 +357,10 @@ h2 {
 .card div {
 	flex:2;
 	font-size: 20px;
+}
+
+/* ------------------------------ */
+
+.contact-container {
+	background-color: #65655E;
 }
