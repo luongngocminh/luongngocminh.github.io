@@ -251,7 +251,7 @@ h2 {
 	height: 100%;
 	position: relative;
 	padding: 0;
-	transition: transform 500ms ease-in-out;
+	transition: transform 300ms ease-in-out;
 }
 
 .slide-btn--left img {
@@ -294,12 +294,16 @@ h2 {
 .card {
 	background-color: white;
 	width: 60%;
-	height: 50%;
+	height: 40%;
 	border: none;
 	border-radius: 2%;
-	padding: 20px;
+	padding: 50px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	z-index: 5;
+	display: flex;
+	
+	justify-content: space-between;
+	align-items: center;
 }
 
 .slide-nav {
@@ -323,12 +327,14 @@ h2 {
 	height: 12px;
 	background-color: rgba(255, 255, 255, .6);
 	outline: none;
-	transition: 500ms ease-in-out;
+	transition: 300ms ease-in-out;
 }
 
 .slide-indicator:hover {
 	cursor: pointer;
-	background-color: rgba(255, 255, 255, 1)
+	background-color: rgba(255, 255, 255, 1);
+	width: 15px;
+	height: 15px;
 }
 
 .slide-indicator.current-slide {
@@ -339,4 +345,16 @@ h2 {
 
 .hidden {
 	display: none;
+}
+
+
+.card img {
+	height: 65%;
+	flex:1;
+	margin-right: 30px;
+}
+
+.card div {
+	flex:2;
+	font-size: 20px;
 }
