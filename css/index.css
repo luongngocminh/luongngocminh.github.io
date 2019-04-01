@@ -27,6 +27,7 @@ body {
 section {
 	padding-left: 12px;
 	padding-right: 12px;
+	padding-top: 20px;
 }
 
 h1,
@@ -39,6 +40,7 @@ h2 {
 
 .container {
 	height: 100vh;
+	padding-top: 50px;
 }
 
 
@@ -221,4 +223,120 @@ h2 {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 0;
+}
+
+.track-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.skill__title-container {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-top: 50px;
+}
+
+.skill__title-container > h1 {
+	font-size: 60px;
+}
+
+.slides {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding: 0;
+	transition: transform 500ms ease-in-out;
+}
+
+.slide-btn--left img {
+	transform: rotate(180deg);
+}
+
+.slide-btn--right {
+	left: 90%;
+}
+
+.slide-btn {
+	position: absolute;
+	opacity: .6;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 10%;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	filter: invert(1) sepia(0) saturate(0) hue-rotate(190deg);
+}
+
+.slide-btn:hover {
+	opacity: 1;
+}
+
+.card-container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+	top: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	background-color: white;
+	width: 60%;
+	height: 50%;
+	border: none;
+	border-radius: 2%;
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: 5;
+}
+
+.slide-nav {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	z-index: 5;
+	height: 50px;
+	top: 90%;
+	transform: translate(-50%, -100%);
+	left: 50%;
+}
+
+.slide-indicator {
+	margin: 10px;
+	border: 0;
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	background-color: rgba(255, 255, 255, .6);
+	outline: none;
+	transition: 500ms ease-in-out;
+}
+
+.slide-indicator:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 1)
+}
+
+.slide-indicator.current-slide {
+	background-color: rgba(255, 255, 255, 1);
+	width: 20px;
+	height: 20px;
+}
+
+.hidden {
+	display: none;
 }
